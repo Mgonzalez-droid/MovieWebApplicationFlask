@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block head %}
+
+{% endblock %}
+
+{% block body %}
+<div class="w3-row w3-padding-64">
+    <div class="w3-twothird w3-container">
+      <h1 class="w3-text-teal">Welcome,</h1>
+      <p>Our motivation to create a Movie Web app serves to not only join our joint passion for movies but to describe movie review data in a trend analysis manner. We plan on addressing the best films to watch through queries detailed out in our Reviews Section. We hope you enjoy our website</p>
+    </div>
+  </div>
+
+<!--database image-->
+<center><img src="{{ url_for('static', filename='image/database_image.png') }}" alt="database image"></center>
+{% endblock %}

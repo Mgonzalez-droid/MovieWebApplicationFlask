@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Create User</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/create-user-page.css') }}">
+  <script defer src="{{ url_for('static', filename='javascript/create-user-page.js') }}"></script>
+</head>
+
+<body>
+  <main id="main-holder">
+    <h1 id="create-user-header">Create User</h1>
+    
+    <form id="create-user-form">
+      <input type="name" name="name" id="name-field" class="create-user-form-field" placeholder="Name">
+	  <input type="text" name="username" id="username-field" class="create-user-form-field" placeholder="Username">
+      <input type="password" name="password" id="password-field" class="create-user-form-field" placeholder="Password">
+      <input type="submit" value="Submit" id="create-user-form-submit">
+      <p><a href="{{ url_for('login') }}">Login</a></p>
+      <a href="{{ url_for('index') }}">Home</a>
+    </form>
+  
+  </main>
+</body>
+
+</html>

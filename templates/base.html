@@ -34,9 +34,14 @@
     <div class="w3-bar w3-theme w3-left-align w3-large">
       <a class="w3-bar-item w3-button w3-right w3-hide-large w3-hover-white w3-large w3-theme-l1" href="javascript:void(0)" onclick="w3_open()"><i class="fa fa-bars"></i></a>
       <a href="{{ url_for('index') }}" class="w3-bar-item w3-button w3-theme-l1">Home</a>
-      <a href="{{ url_for('reviews') }}" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Reviews</a>
-      <a href="{{ url_for('reviewStats') }}" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Review Statistics</a>
-      <a href="{{ url_for('login') }}" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Login</a>
+      <!--<a href="{{ url_for('reviews') }}" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Reviews</a>-->
+      <!--<a href="{{ url_for('reviewStats') }}" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Review Statistics</a>-->
+      <!--<a href="{{ url_for('login') }}" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Login</a>-->
+      <a href="{{ url_for('queryOne') }}" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Query One</a>
+      <a href="{{ url_for('queryTwo') }}" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Query Two</a>
+      <a href="{{ url_for('queryThree') }}" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Query Three</a>
+      <a href="{{ url_for('queryFour') }}" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Query Four</a>
+      <a href="{{ url_for('queryFive') }}" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Query Five</a>
     </div>
   </div>
     {% block body %}{% endblock %}

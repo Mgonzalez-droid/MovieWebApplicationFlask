@@ -13,6 +13,9 @@ import html
 username = ""
 password = ""
 isAdmin = False
+isLoggedIn = False
+#cur =
+#conn
 
 # ____ W E B P A G E S ____
 app = Flask(__name__)
@@ -58,6 +61,27 @@ def login():
 @app.route('/login/create-user')
 def createUser():
     return render_template('create-user-page.html')
+
+@app.route('/query-one')
+def queryOne():
+    return render_template('query-one.html')
+
+@app.route('/query-two')
+def queryTwo():
+    return render_template('query-two.html')
+
+@app.route('/query-three')
+def queryThree():
+    return render_template('query-three.html')
+
+@app.route('/query-four')
+def queryFour():
+    return render_template('query-four.html')
+
+@app.route('/query-five')
+def queryFive():
+    return render_template('query-five.html')
+
 
 def generateNewUser():
     pass
@@ -134,4 +158,5 @@ def uniqueQueryFive():
 
 # Main entry point for application
 if __name__ == "__main__":
+    connectOracle()
     app.run(debug=True)

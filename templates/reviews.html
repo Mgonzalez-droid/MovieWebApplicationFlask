@@ -5,6 +5,16 @@
 {% endblock %}
 
 {% block body %}
+
+<div class style="margin-left:20px">
+  <ul>
+    {% for title in titles %}
+    <li>{{title}}</li>
+    {% endfor %}
+  </ul>
+</div>
+
+<!--
 <div class style="margin-left:20px">
     <p>Generate list of movie links in javascript</p>
     <ul>
@@ -26,4 +36,5 @@
       <li>So on...</li>
     </ul>
   </div>
+-->
 {% endblock %}

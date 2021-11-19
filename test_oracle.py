@@ -28,7 +28,7 @@ print(conn.version)
 cur = conn.cursor()
 
 query = """
-SELECT * FROM CITY
+SELECT * FROM MOVIE
 """
 
 #Execute query
